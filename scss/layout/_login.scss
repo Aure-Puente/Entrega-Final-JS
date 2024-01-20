@@ -1,0 +1,30 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: map-get($map: $ColorFondo, $key: negro);
+}
+
+
+
+
+
+
+
+
+
+.boton-login{
+    position: fixed;
+    width: 6.25rem;
+    height: 6.25rem;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.boton-login:hover{
+    transform: scale(1.4);
+}
