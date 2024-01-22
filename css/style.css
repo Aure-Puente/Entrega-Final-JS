@@ -566,6 +566,10 @@ body {
   border-style: groove;
   border-color: #272829;
 }
+.login-cuadro h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+}
 .login-cuadro label {
   margin-bottom: 2.1875rem;
 }

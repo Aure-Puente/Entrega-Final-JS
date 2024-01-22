@@ -1,7 +1,7 @@
-# Entrega Final
+# Tercera Pre-Entrega
 
 ------------
-### Hola Profe, primero que nada quería agradecerle por las clases, fueron super claras y aprendí un montón. La verdad no sabía sobre que hacer la página al principio asi que terminé haciendo una fan page sobre esta banda que me gusta mucho desde chico. Le comento que yo también soy de Mar del Plata asi que si sabe de algún laburito bienvenido sea! jaja. Nuevamente muchas gracias por todo, sigo motivado para seguir aprendiendo. Saludos !
+### Buenas!. Para la tercera pre-entrega realicé un login que guarda la información en el storage. Se puede acceder a la page del login a través botón flotante que se encuentra en la esquina derecha inferior de cualquiera de las otras pages.
 ------------
 
 ## Muchas gracias por la corrección !

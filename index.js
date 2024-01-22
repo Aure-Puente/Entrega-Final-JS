@@ -29,7 +29,7 @@ const isLog = JSON.parse(localStorage.getItem("isLog")) || {};
 
 //FUNCION PARA PINTAR HTML
 const miCuenta = (usuario) => {
-    contenedor.innerHTML = `<h1>Bienvenido de nuevo, ${usuario}.</h1>`;
+    contenedor.innerHTML = `<h1>Bienvenido/a, ${usuario}!</h1>`;
 };
 
 //EJECUCION DE LA FUNCION SI EL LOGEO ESTÁ VERIFICADO
@@ -48,6 +48,6 @@ botonIniciar.addEventListener("click", () => {
         localStorage.setItem("isLog", JSON.stringify({ usuario: usuario }));
         miCuenta(usuario);
     } else {
-        contenedor.innerHTML = '<h1>Usuario no encontrado</h1>';
+        contenedor.innerHTML = '<h1>Usuario no encontrado</h1><button class="login-button">Volver a Login</button>';
     }
 });
