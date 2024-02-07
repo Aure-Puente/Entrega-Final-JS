@@ -1,35 +1,10 @@
-.form{
-    background-color: map-get($map: $ColorFondo, $key: negro);
-    height: 50rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 1.875rem;
-}
-
-.tipo-datos{
-    font-family: 'Archivo Black', sans-serif;
-    color: $blanco;
-    font-size: 1.875rem;
-    padding-left: 5rem;
-}
-
-.datos{
-    font-family: 'Archivo Black', sans-serif;
-    color: $blanco;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: .3125rem;
-    padding-left: 12.5rem;
-    padding-right: 6.25rem;
-}
-
 .flex-boton{
     background-color: map-get($map: $ColorFondo, $key: negro);
     display: flex;
     justify-content: center;
     padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    margin-top: 0;
 }
 
 .botmerch{

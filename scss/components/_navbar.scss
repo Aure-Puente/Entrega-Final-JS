@@ -22,3 +22,13 @@
 .nav-btn:hover{
     background-color: $amarillo;
 }
+
+.cart{
+    width: 4.6875rem;
+    padding-left: .625rem;
+    transition: all 0.5s;
+}
+
+.cart:hover{
+    transform: scale(1.2);
+}

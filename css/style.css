@@ -245,39 +245,34 @@ body {
   margin-top: 1.875rem;
 }
 
-/*Formulario en Productos*/
-.form {
-  background-color: #272829;
-  height: 50rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.carrito {
+  background-color: #ADB3B1;
   margin-top: 1.875rem;
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
 }
-
-.tipo-datos {
-  font-family: "Archivo Black", sans-serif;
-  color: #F2F2F2;
-  font-size: 1.875rem;
-  padding-left: 5rem;
+.carrito h2 {
+  color: #272829;
+  font-family: "Black Ops One", cursive;
+  font-size: 2.5rem;
 }
-
-.datos {
+.carrito ul {
   font-family: "Archivo Black", sans-serif;
-  color: #F2F2F2;
   font-size: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3125rem;
-  padding-left: 12.5rem;
-  padding-right: 6.25rem;
+}
+.carrito p {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.875rem;
 }
 
+/*Formulario en Productos*/
 .flex-boton {
   background-color: #272829;
   display: flex;
   justify-content: center;
   padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  margin-top: 0;
 }
 
 .botmerch {
@@ -725,6 +720,16 @@ footer {
   background-color: #EAC050;
 }
 
+.cart {
+  width: 4.6875rem;
+  padding-left: 0.625rem;
+  transition: all 0.5s;
+}
+
+.cart:hover {
+  transform: scale(1.2);
+}
+
 /*Cards con Bootstrap en Productos*/
 .card {
   border-width: 0.3125rem;
@@ -760,6 +765,10 @@ footer {
 .boton-card:hover {
   background-color: #EAC050;
   color: #272829;
+}
+
+.precio {
+  font-size: 1.5625rem;
 }
 
 /*-----------------MEDIA QUERIES-------------------*/

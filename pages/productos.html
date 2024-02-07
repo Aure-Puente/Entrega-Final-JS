@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -58,24 +60,27 @@
                 <img src="../assets/img/producto4.webp" class="card-img-top" alt="buzo negro">
                 <div class="card-body">
                     <h5 class="card-title">BUZO CAPUCHA LP</h5>
+                    <p class="precio">$ 20000</p>
                     <p class="card-text">Buzo con capucha de Linkin Park. Todas las opciones de colores y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Buzo Capucha LP" data-price="20000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
             <div class="card" style="width: 18.75rem;">
                 <img src="../assets/img/producto1.jpg" class="card-img-top" alt="pantalon negro">
                 <div class="card-body">
                     <h5 class="card-title">JOGGING LP</h5>
+                    <p class="precio">$ 35000</p>
                     <p class="card-text">Jogging de Linkin Park. Todas las opciones en colores y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Jogging LP" data-price="35000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
             <div class="card" style="width: 18.75rem;">
                 <img src="../assets/img/producto2.jpg" class="card-img-top" alt="buzo gris mangas negras">
                 <div class="card-body">
                     <h5 class="card-title">BUZO LAST LOGO LP</h5>
+                    <p class="precio">$ 15000</p>
                     <p class="card-text">Buzo con capucha y diseño del último logo de Linkin Park. Todos los colores y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Buzo Last Logo LP" data-price="15000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
         </section>
@@ -84,62 +89,38 @@
                 <img src="../assets/img/producto3.webp" class="card-img-top" alt="buzo campera gris">
                 <div class="card-body">
                     <h5 class="card-title">BUZO-CAMPERA LP</h5>
+                    <p class="precio">$ 40000</p>
                     <p class="card-text">Buzo-Campera con capucha de Linkin Park. Todos los colores y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Buzo-Campera LP" data-price="40000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
             <div class="card" style="width: 18.75rem;">
                 <img src="../assets/img/producto5.jpg" class="card-img-top" alt="remera negra">
                 <div class="card-body">
                     <h5 class="card-title">REMERA HYBRID THEORY LP</h5>
+                    <p class="precio">$ 10000</p>
                     <p class="card-text">Remera con el diseño de Hybrid Theory de Linkin Park. Todos los colores y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Remera Hybrid Theory LP" data-price="10000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
             <div class="card" style="width: 18.75rem;">
                 <img src="../assets/img/producto6.jpg" class="card-img-top" alt="remera negra">
                 <div class="card-body">
                     <h5 class="card-title">REMERA LP</h5>
+                    <p class="precio">$ 15000</p>
                     <p class="card-text">Remera de Linkin Park. Todos los diseños y talles en el enlace.</p>
-                    <a href="#" class="boton-card">COMPRAR</a>
+                    <a href="#" class="boton-card agregar-carrito" data-name="Remera LP" data-price="15000">AGREGAR AL CARRITO</a>
                 </div>
             </div>
         </section>
-        <section>
-            <form action="" class="form">
-                <fieldset>
-                    <legend class="tipo-datos">
-                        DATOS PERSONALES
-                    </legend>
-                    <div class="datos"><label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
-                        <label for="ciudad">Ciudad:</label>
-                        <input type="text" id="ciudad" placeholder="Ingrese ciudad">
-                        <label for="país">País:</label>
-                        <input type="text" id="país" placeholder="Ingrese país">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend class="tipo-datos">
-                        DATOS COMPRA
-                    </legend>
-                    <div class="datos"><label for="tarjeta">Número de la Tarjeta:</label>
-                        <input type="number" id="tarjeta" placeholder="ingrese número" required>
-                        <label for="fecha">Fecha de caducidad:</label>
-                        <input type="date" id="fecha" required>
-                        <label for="titular">Titular de la Tarjeta:</label>
-                        <input type="text" id="titular" placeholder="nombre y apellido" required>
-                        <label for="CVV">CVV:</label>
-                        <input type="password" placeholder="xx" required>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="carrito">
+            <h2>CARRO DE COMPRAS</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="total">0</span></p>
+        </div>
             <div class="flex-boton">
-                <button class="botmerch">COMPRAR</button>
+                <button class="botmerch" id="botmerch">COMPRAR</button>
             </div>
-        </section>
         <div>
             <a href="../pages/login.html"><img src="../assets/img/fanlogo.webp" class="boton-login" alt="logo personalizado"></a>
         </div>
@@ -163,6 +144,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
