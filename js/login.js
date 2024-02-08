@@ -19,6 +19,8 @@ isLog.usuario && miCuenta(isLog.usuario);
 
 // EVENTO PARA EL BOTÓN DE INICIO DE SESION
 botonIniciar.addEventListener("click", () => {
+    //SACAMOS EL REFRESCO AUTOMÁTICO AL DAR CLICK AL BOTÓN Y GENERAMOS VARIABLES
+    event.preventDefault();
     const usuario = usernameInput.value;
     const contraseña = passwordInput.value;
     // APLICAMOS FETCH CON LA BASE DE DATOS SIMULADA EN JSON
@@ -34,6 +36,12 @@ botonIniciar.addEventListener("click", () => {
                 miCuenta(usuario);
             } else {
                 contenedor.innerHTML = '<h1>Usuario no encontrado</h1><button class="login-button">Volver a Login</button>';
+                Swal.fire({
+                    icon: "error",
+                    title: "ALgo salió mal!",
+                    text: "Si ya tienes una cuenta, por favor escribe los datos correctamente",
+                    footer: '<a href="../index.html">Volver a la página de inicio'
+                });
             }
         })
         .catch(error => {
